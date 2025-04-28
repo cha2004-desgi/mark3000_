@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Mark3000 | Creativitat, Energia i Màrqueting del Futur 🚀</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+    header { position: sticky; top: 0; background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+    nav a { margin: 0 1.5rem; text-decoration: none; color: #004080; font-weight: bold; font-size: 1.2rem; }
+    nav a:hover { color: #ff66cc; }
+    section { padding: 4rem 2rem; }
+    h2, h3 { color: #004080; text-align: center; }
+    p { color: #555; text-align: center; }
+    .flex-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+    .card { background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); padding: 2rem; width: 280px; text-align: center; transition: transform 0.3s; cursor: pointer; }
+    .card:hover { transform: scale(1.05); }
+    .projecte-detall { display: none; background: #ffffff; margin-top: 2rem; padding: 2rem; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    .projecte-detall img { width: 100%; max-width: 800px; margin: 2rem auto; display: block; border-radius: 20px; }
+    .btn-tornar { background: #ff66cc; padding: 1rem 2rem; color: white; text-decoration: none; border-radius: 30px; display: inline-block; margin-top: 2rem; font-weight: bold; }
+    .img-section { width: 100%; max-width: 600px; margin: 2rem auto; display: block; border-radius: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚀 Mark3000</h1>
+  <nav>
+    <a href="#qui-som">Inici</a>
+    <a href="#serveis">Serveis</a>
+    <a href="#projectes">Projectes</a>
+    <a href="#contacte">Contacte</a>
+  </nav>
+</header>
+
+<section id="qui-som" style="background: linear-gradient(135deg, #ffffff, #e3f2fd);">
+  <h2>👥 Qui som</h2>
+  <p>Mark3000 és una agència jove, dinàmica i creativa, formada per ments inquietetes de 22 anys amb una missió clara: revolucionar el màrqueting digital amb energia, innovació i passió.</p>
+  <div class="flex-cards">
+    <div class="card"><h3>🎯 Missió</h3><p>Oferir solucions de màrqueting que connectin emocionalment amb les noves generacions i facin créixer les marques d'una manera autèntica.</p></div>
+    <div class="card"><h3>👁️ Visió</h3><p>Ser l'agència de referència per les marques emergents, innovant constantment i marcant tendència en el món digital.</p></div>
+    <div class="card"><h3>💡 Valors</h3><ul style="list-style:none; padding:0;"><li>🚀 Creativitat disruptiva</li><li>🤝 Transparència i proximitat</li><li>🔥 Passió pel que fem</li><li>🌟 Adaptabilitat constant</li></ul></div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop" alt="Equip Mark3000" class="img-section">
+</section>
+
+<section id="serveis" style="background: linear-gradient(135deg, #f3e5f5, #ffffff);">
+  <h2>🛠️ Serveis</h2>
+  <div class="flex-cards">
+    <div class="card"><h3>📈 Campanyes digitals</h3><p>Creació i execució de campanyes publicitàries en línia que impacten i connecten amb el teu públic.</p></div>
+    <div class="card"><h3>📸 Xarxes socials</h3><p>Gestió de xarxes amb estratègies creatives per fer créixer la teva comunitat i la teva marca.</p></div>
+    <div class="card"><h3>🎯 Estratègia de marca</h3><p>Construïm marques amb ànima i valors, perquè siguin recordades i estimades pel públic.</p></div>
+    <div class="card"><h3>🌐 Disseny web & ecommerce</h3><p>Dissenyem webs modernes, responsives i pensades per vendre.</p></div>
+  </div>
+</section>
+
+<section id="projectes" style="background: linear-gradient(135deg, #e0f7fa, #ffffff);">
+  <h2>🚀 Projectes que inspiren 🚀</h2>
+  <div class="flex-cards">
+    <div onclick="mostrarProjecte('marcaJove')" class="card"><h3>🌟 Marca Jove</h3><p>Creat i impulsat una marca emergent.</p></div>
+    <div onclick="mostrarProjecte('ecommerce')" class="card"><h3>📈 Ecommerce</h3><p>Triplicació de vendes en 6 mesos.</p></div>
+    <div onclick="mostrarProjecte('rebranding')" class="card"><h3>🎨 Rebranding Cultural</h3><p>Nou concepte per a un centre cultural.</p></div>
+  </div>
+
+  <div id="marcaJove" class="projecte-detall">
+    <h3>🌟 Marca Jove</h3>
+    <p>Hem creat una marca de moda urbana que ha revolucionat les xarxes socials amb una imatge fresca i atrevida, captant l'atenció de milers de joves arreu del territori.</p>
+    <img src="https://images.unsplash.com/photo-1520975698519-59df2e60235e?w=800&h=600&fit=crop" alt="Marca Jove">
+    <a href="#projectes" class="btn-tornar" onclick="tancarProjectes()">⬅️ Tornar als projectes</a>
+  </div>
+
+  <div id="ecommerce" class="projecte-detall">
+    <h3>📈 Ecommerce</h3>
+    <p>Optimització integral d'un ecommerce amb noves estratègies de SEO, SEM i màrqueting social, aconseguint triplicar les vendes en tan sols 6 mesos.</p>
+    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop" alt="Ecommerce">
+    <a href="#projectes" class="btn-tornar" onclick="tancarProjectes()">⬅️ Tornar als projectes</a>
+  </div>
+
+  <div id="rebranding" class="projecte-detall">
+    <h3>🎨 Rebranding Cultural</h3>
+    <p>Transformació total de la identitat visual d'un centre cultural per fer-lo més atractiu a nous públics, amb una aposta per la comunicació moderna i inclusiva.</p>
+    <img src="https://images.unsplash.com/photo-1603570417037-bb8c6f2a35b9?w=800&h=600&fit=crop" alt="Rebranding Cultural">
+    <a href="#projectes" class="btn-tornar" onclick="tancarProjectes()">⬅️ Tornar als projectes</a>
+  </div>
+</section>
+
+<section id="contacte" style="background: linear-gradient(135deg, #f0f4ff, #ffffff);">
+  <h2>📩 Contacta amb nosaltres 📩</h2>
+  <p>Vols impulsar la teva marca? Estem a un missatge de fer-ho realitat! 🚀</p>
+  <div style="text-align:center;">
+    <a href="mailto:hola@mark3000.com" class="btn-tornar" style="background:#ff66cc;">💌 Envia'ns un correu</a>
+    <a href="https://www.instagram.com/mark3000" target="_blank" class="btn-tornar" style="background:#004080;">📸 Segueix-nos</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1600051285785-3242b6b5f5b9?w=800&h=600&fit=crop" alt="Contacte" class="img-section">
+</section>
+
+<script>
+function mostrarProjecte(id) {
+  document.querySelectorAll('.projecte-detall').forEach(p => p.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+function tancarProjectes() {
+  document.querySelectorAll('.projecte-detall').forEach(p => p.style.display = 'none');
+}
+</script>
+
+</body>
+</html>
